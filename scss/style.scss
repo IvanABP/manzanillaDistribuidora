@@ -19,6 +19,7 @@ body{
         position: sticky;
         top: 0;
         background-color:$colorHeader;
+        z-index: 100;
         
         a{
             text-decoration: none;
@@ -277,7 +278,7 @@ body{
         
     }
 }
-
+/*
 @media only screen and (max-width:768px){
     body{
         main{
@@ -322,7 +323,7 @@ body{
                     }
                 }
             }
-            /*mermeldas*/
+            /*mermeldas
             .inicioMermeladasMultimedia{
                 margin: 0px;
                 display: grid;
@@ -369,9 +370,64 @@ body{
             
         }
     }
-}
+}*/
 @media only screen and ( max-width:600px){
-
+    body{
+        main{
+            .cajaInicioHistoria{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows:repeat(2, 50%);
+            }
+            .cajaInicioHistoriaReverse{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .cajaNosotros{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 3fr;
+                justify-items: center;
+                align-items: center;
+                margin:5%;
+                &__cajaNosotrosVisionMision{
+                    display: grid;
+                    grid-template-columns:  1fr;
+                    grid-template-rows: 1fr;
+                    text-align: justify;
+                    gap: 10px;
+                    
+                }
+            }
+            .cajaEncontranos{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 1fr;
+                gap: 10px;
+            }
+            
+        }
+        footer{
+            .cajaFooter{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 2fr;
+                &__div{
+                    &-centradoDeIconosFooter{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr;
+                        justify-items: center;
+                        align-items: center;
+                    }
+                }
+                &__Img:hover{
+                    transform: scale(1.3,1.3);
+                }
+            }
+        }  
+    }
+/*
     .cajaInicioHistoria{
         display: grid;
         grid-template-columns: 100%;
@@ -414,13 +470,13 @@ body{
             }
         }
     }
-    /*contacto*/
+    /*contacto
     .cajaContacto{
         font-size: 15px;
         margin: 10px 20px 20px 20px;
         padding: 10px;
     }
-    /*mermeldas*/
+    /*mermeldas
     .inicioMermeladasMultimedia{
         margin: 0px;
         display: grid;
@@ -468,5 +524,5 @@ body{
     }
     .botoneramermeladas{
         margin: 10px;
-    }
+    }*/
 }
