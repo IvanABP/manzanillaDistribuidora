@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Patua+One&family=Vollkorn+SC:wght@600&display=swap" rel="stylesheet">
+
+    <meta name="description"
+    content="Nuestros dulces están elaborados con fruta entera orgánica,sin agregados artificiales ni conservantes, de forma sustentable preservando los recursos naturales de la tierra.">
+ 
+    <meta name="keywords"
+    content="Sin Tacc, Sin Azucar Agregado, Productos Ornanico, Productos Naturales, MermeladasSaludables, Distribuidora Masseube, Mermelada Organica, Mermelada Natuaral">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dist. Manzilla</title>
+</head>
+<body class="division">
+    <header>
+        <!--Inicio de navbar de boost-->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="mermeladas.html">
+                <img src="Img/Logo/dManzilla_2.png" alt="LogoManzanilla" width="60" height="60" class="d-inline-block align-text-center">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="chocolate.html">Chocolates</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="mermeladas.html">Mermeladas</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="aceites.html">Aceites</a></li>
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                  </li>                  
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+        <!--Fin de navbar-->
+    </header>
+
+    <main>
+        <h1 class="titulos">Mermeladas Masseube</h1>
+
+        <section class="inicioMermeladasMultimedia">
+            <div class="mermeladasMultimedia">
+                <div class="descripcionMass">
+                    <p>Todos nuestros dulces están elaborados con fruta entera orgánica, sin agregados artificiales ni conservantes, de forma sustentable preservando los recursos naturales de la tierra.</p>
+                    <p>Nuestros dulces están elaborados con las frutas más ricas de la Patagonia, son aptos para celíacos y no tienen conservantes.</p>
+                    <p>Nuestros dulces son elaborados respetan el medio ambiente, para que las plantas den frutas sanas y deliciosas.</p>
+                        <!--Botonera de tipo de mermeladas-->
+                    <div class="btn-group botoneramermeladas">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Tipos de    mermeladas</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#Organico">Organicas</a></li>
+                            <li><a class="dropdown-item" href="#Naturales">Naturales</a></li>
+                        </ul>
+                    </div>
+                        <!--Fin de la botonera-->
+                </div>
+                <!--Inicio del carrusel-->        
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="Img/Mermeladas/masseubeCarrusel_1.jpg" class="d-block w-100" alt="Masseube">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="Img/Mermeladas/masseubeCarrusel_2.jpg" class="d-block w-100" alt="Masseube">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                        <img src="Img/Mermeladas/masseubeCarrusel_3.jpg" class="d-block w-100" alt="Masseube">
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div> 
+                <!--Fin del carrusel-->
+            </div>
+            <div>
+                <div class="videosMass"> 
+                    <iframe  width="560" height="315" src="https://www.youtube.com/embed/rzR1suvLG8k?start=110" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7rsne2ojbzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>   
+        </section>
+
+        <div class="selector">
+            <a name="Organico"></a>
+        </div>
+        <h2 class="titulos">Dulces Organicos</h2>
+        <h3 class="titulosMenores">Hechos con frutas orgánicas, cosechadas en Valle del Medio.</h3>
+
+        <section class="muestraDeMermeladas"><!--Aca empieza los dulces organicos-->
+            <!--Cada seccion hijo se agrupan en fila de 3-->       
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Orgánicos Frambuesa</h3>
+                <img class="imagenesMass" src="Img/Mermeladas/Orgamico_Frambueza.jpeg" alt="FrambuezaMasseube">
+                <p>Posee un alto contenido de vitaminas B, C y E, y es rica en fibras. Además, es una baya con excelentes propiedades antioxidantes.</p>
+                <p>Es una planta fuerte, noble y muy resistente a diferentes tipos de temperatura. Prospera tanto en suelos pedregosos como en terrenos graníticos. A pesar de su carácter vigoroso, su fruto es suave al tacto y su sabor es delicioso.</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energético</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteínas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas trans</td>
+                        <td>0 g</td>
+                        <td>–</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0,5 g</td>
+                        <td>2%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Orgánicos Cassis</h3>
+                <img class="imagenesMass" src="Img/Mermeladas/Organico_Cassis.jpeg" alt="cassisMasseube">
+                <p>El Cassis es muy reconocido por sus valores nutricionales. Su fruto es rico en vitamina C y contiene propiedades antioxidantes y anti-inflamatorias que ayudan al sistema inmunológico.</p>
+                <p>Su sabor es agridulce y posee un singular aroma que hace que esta fruta fina sea protagonista en distintas bebidas alcohólicas y en la industria de la perfumería.</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energetico</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Trans</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0,8 g</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                </table>
+            </section>
+                    
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Orgánicos Zarzamora</h3>
+                <img class="imagenesMass" src="Img/Mermeladas/Organico_Zarmora.jpeg" alt="zarmoraMasseube">
+                <p>Sus exquisitos frutos nos aportan las vitaminas A, B1, B2, B3, B6, B9, C y E. También es rico en Calcio, Hierro, Magnesio, Fósforo, Potasio, Selenio, Sodio y Zinc y tiene propiedades antioxidantes.</p>
+                <p>Si bien es un arbusto principalmente silvestre, es cultivado desde el siglo XIX y se han generado más de 2000 especies distintas, la mayoría sin espinas facilitando así su recolección.</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energetico</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Trans</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0,5 g</td>
+                        <td>2%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                </table>
+            </section>
+                                
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Orgánicos Frutilla</h3>
+                <img class="imagenesMass" src="Img/Mermeladas/Organico_frutilla.jpeg" alt="frutillaMasseube">
+                <p>Su fruto y sus hojas poseen cualidades que combaten el colesterol, son anti-inflamatorias, ayudan a mantener una piel sana e incluso previenen ciertos tipos de cáncer.</p>
+                <p>Su época preferida del año es el verano. La frutilla, además de ser una fruta exquisita y deliciosa, posee un gran número de atributos beneficiosos para la salud.</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energetico</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Trans</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                </table>
+            </section>
+                                
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Orgánicos Rosa Mosqueta</h3>
+                <img class="imagenesMass" src="Img/Mermeladas/Organico_RosaMosqueta.jpeg" alt="rosaMasseube">
+                <p>Los distintos derivados de su uso, como el aceite y el té, ganan popularidad gracias a sus valiosas propiedades. Se la considera uno de los más potentes agentes anti-envejecimiento de la naturaleza y esta revolucionando el mundo de la Medicina Natural, nutrición y la Cosmética.</p>
+                <p>A pesar de su carácter indomable, posee innumerables virtudes las cuales le valieron el mote de "fruto de la eterna juventud".</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energetico</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Trans</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Vitamina C</td>
+                        <td>22 mg</td>
+                        <td>49% IDR</td>
+                        </tr>
+                </table>
+            </section>
+                                
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Orgánicos Frutos del bosque</h3>
+                <img class="imagenesMass" src="Img/Mermeladas/Organico_FrutosBosque.jpeg" alt="frutosMasseube">
+                <p>Gracias a las bondades de sus distintos ingredientes, que son ricos en compuestos antiinflamatorios y antioxidantes, consumir frutos del bosque regularmente mantiene la mente sana, además de regalarle al paladar una experiencia deliciosa en cada desayuno con dulces Masseube.</p>
+                <p>Elaborados con sauco, frambuesa, frutilla, zarzamora, grosella y cassis cuidadosamente seleccionados de la finca de Valle del Medio.</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energetico</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Trans</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0,5 g</td>
+                        <td>2%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                </table>
+            </section>
+        
+        </section>
+
+        <div class="selector">
+            <a name="Naturales"></a>
+        </div>
+        <h2 class="titulos">Dulces Naturales</h2>
+        <h3 class="titulosMenores">Sabores patagónicos directo a la mesa de tu desayuno.</h3>
+
+        <!--Aca empieza los dulces Naturales-->
+        <section class="muestraDeMermeladas"> <!--Cada seccion hijo se agrupan en fila de 3-->
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Naturales Arándano</h3>
+                <img class="imagenesMass" src="Img/Mermeladas/Natural_arandanos.jpeg" alt="naturalesArandanos">
+                <p>Conocido también como Blueberry, el arándano es una fruta muy requerida en todo el mundo debido a que posee innumerables cualidades nutritivas.</p>
+                <p>Al igual que otros frutos rojos, posee un alto poder antioxidante, sus nutrientes aumentan el colesterol bueno y reducen los riesgos cardíacos. Además, casi no posee grasas, sodio ni colesterol y es rico en fibras y en vitamina C.</p>
+                        
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energético</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteínas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas trans</td>
+                        <td>0 g</td>
+                        <td>–</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Naturales Calafate</h3>   
+                <img class="imagenesMass" src="Img/Mermeladas/Natural_calafate.jpeg" alt="naturalCalafate">
+                <p>El Calafate es el símbolo de la Patagonia. Este arbusto ofrece unas exquisitas bayas violáceas que son recolectadas en el verano. </p>
+                <p>El Calafate se destaca por sus cualidades hipocalóricas, antioxidantes, nutritivas y medicinales.</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energetico</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Trans</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0,5 g</td>
+                        <td>2%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                </table>
+            </section>
+                    
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Naturales Cereza Negra</h3>
+                <img class="imagenesMass" src="Img/Mermeladas/Natural_cerezanegra.jpeg"alt="cerezaNegra">
+                <p>Este fruto originario de la antigua Grecia cautiva a los ojos con su color intenso y brillante. Es dulce y delicioso y su consistencia carnosa lo convierte en un delicado manjar.</p>
+                <p>Además de cumplir las expectativas de los paladares más exigentes, ofrece un amplio rango de vitaminas y posee propiedades antioxidantes. Su consumo previene el envejecimiento, ayuda a dormir mejor y combate enfermedades cardiovasculares.</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energetico</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Trans</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                </table>
+            </section>
+                                
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Naturales Sauco</h3>
+                <img class="imagenesMass" src="Img/Mermeladas/Natural_sauco.jpeg" alt="naturalSauco">
+                <p>Gracias al sabor dulce y agrio de la fruta, resulta de gran utilidad como ingrediente de tortas, dulces, conservas, mermeladas y hasta vinos y licores.</p>
+                <p>Su fruto, corteza y sus hojas poseen muchas propiedades. Es rico en vitaminas A y C, calcio, vitamina B6, hierro y antioxidantes. Aplicado en forma de infusión ayuda a tratar resfriados y gripes, baja la fiebre y alivia los dolores de garganta.</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energetico</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Trans</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0,5 g</td>
+                        <td>2%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                </table>
+            </section>
+                                
+            <section class="tipoDeMermeladas">
+                <h3>Dulces Naturales Guinda</h3>
+                <img class="imagenesMass" src="Img/Mermeladas/Natural_Guinda.jpeg" alt="naturalGuinda">
+                <p>Se destaca por ayudar a prevenir enfermedades cardiovasculares, ser antioxidante y a contribuir a bajar el colesterol. Es por esto que el consumo de guindas no sólo es un placer sino que además es una decisión saludable.</p>
+                <table border="1">
+                    <tr>
+                        <th></th>
+                        <th>Cantidad por Porción</th>
+                        <th>% VD (Valor Diario)</th>
+                    </tr>
+                    <tr>
+                        <td>Valor energetico</td>
+                        <td>52 kcal – 218 kJ</td>
+                        <td>3%</td>
+                    </tr>
+                    <tr>
+                        <td>Carbohidratos</td>
+                        <td>13 g</td>
+                        <td>4%</td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Totales</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Saturadas</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Grasas Trans</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Fibra alimentaria</td>
+                        <td>0 g</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Sodio</td>
+                        <td>0 mg</td>
+                        <td>0%</td>
+                    </tr>
+                </table>
+            </section>
+        </section>    
+
+    </main><!--Fin del contenido del main-->
+
+    <footer>
+        <section class="cajaFooter"><!--Bloque Inicio-->
+            <div class="cajaFooter__div cajaFooter__div-desarrollador">
+                <p class="cajaFooter__p">Desarrollado por Ivan Balestrieri-2021</p>
+
+                <div class="cajaFooter__divImg cajaFooter__divImg--centradoDeIconos">
+                    <img class="cajaFooter__Img" src="Img/Iconos/Linkedin.png" alt="logoLinkedin">
+                    <img class="cajaFooter__Img" src="Img/Iconos/github.png" alt="Github">
+                </div>
+            </div>
+
+            <div class="cajaFooter__div cajaFooter__div-centradoDeIconosFooter">
+                <p>Acercate a nuestros canales <br> de comunicacion y redes sociales</p>
+                <img class="cajaFooter__Img" src="Img/Iconos/facebook.png" alt="iconoFacebook">
+                <img class="cajaFooter__Img" src="Img/Iconos/instagram.png" alt="iconoInstragam">
+                <img class="cajaFooter__Img" src="Img/Iconos/gmail.png" alt="iconoGmail">
+                <img class="cajaFooter__Img" src="Img/Iconos/whatsapp.png" alt="iconoWashapp">
+            </div>
+        </section><!--Bloque Fin-->
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

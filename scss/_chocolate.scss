@@ -1,0 +1,50 @@
+@import "colores.scss";
+body{
+    main{
+
+        #chocolatesBanner{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        .chocolatesBanner{
+            max-width: 100%;
+        }
+        .chocolatesFlex{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+
+            img{
+                width: 250px;
+                height: 250px;
+                margin: 25px;
+                border-radius: 10px;
+            }
+        }
+        .h3Opacy{
+            @extend .inicioTitulos__titulosMenores-tituloOpacity;
+        }
+        .comentarios{
+            display: grid;
+            grid-template-columns: 1fr 10fr;
+            grid-template-rows: 1fr 1fr;
+            height: 300px;
+            border: 5px solid #607D8B;
+            border-radius: 60px;
+            margin: 50px;
+            padding: 10px;
+            align-items: center;
+            font-style: italic;
+
+            img{
+                width: 100%;
+                margin: 5px;
+                border-radius: 30px;
+            }
+            
+        }   
+    }
+}

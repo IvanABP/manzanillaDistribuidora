@@ -1,0 +1,19 @@
+body{
+    main{
+
+        .error{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 5px;
+
+            img{
+                margin: 10px;
+                height: 500px;
+            }
+        }
+    }
+}

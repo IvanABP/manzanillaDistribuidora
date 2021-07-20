@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+  body main .contacto__titulos-titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    color: #FF4081;
+    word-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px;
+    padding: 5px; }
+  body main .contacto__cajaContactoBienvenida {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+    text-align: center; }
+    body main .contacto__cajaContactoBienvenida-bordes {
+      border: 4px solid #607D8B;
+      border-top-right-radius: 20px; }
+  body main .cajaContacto {
+    border: 4px solid #607D8B;
+    border-top-right-radius: 20px;
+    padding: 15px;
+    font-size: 15px;
+    margin: 20px 100px 50px 100px; }
+    body main .cajaContacto h1, body main .cajaContacto input {
+      margin: 5px 0px 10px 0px; }
+    body main .cajaContacto input {
+      transition: all 1s; }
+    body main .cajaContacto input:focus {
+      width: 50%;
+      font-size: 20px; }
+
+body .division, body main .cajaInicioHistoria-division {
+  background: linear-gradient(to bottom, #FFFFFF, #c0c8cc); }
+
+body main .inicioMermeladasMultimedia {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 100px 0px 100px; }
+  body main .inicioMermeladasMultimedia .mermeladasMultimedia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center; }
+    body main .inicioMermeladasMultimedia .mermeladasMultimedia .descripcionMass {
+      display: flex;
+      flex-direction: column; }
+      body main .inicioMermeladasMultimedia .mermeladasMultimedia .descripcionMass .botoneramermeladas {
+        margin-left: 10px; }
+  body main .inicioMermeladasMultimedia .videosMass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px; }
+
+body main .titulos {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  color: #FF4081;
+  word-spacing: 5px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 50px;
+  padding: 5px; }
+
+body main .titulosMenores {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  color: #757575;
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 5px;
+  margin: 30px;
+  padding: 5px; }
+
+body main .muestraDeMermeladas {
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center; }
+  body main .muestraDeMermeladas .tipoDeMermeladas {
+    width: 45%;
+    margin: 10px 25px 10px 25px;
+    border: 5px solid #607D8B;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF; }
+    body main .muestraDeMermeladas .tipoDeMermeladas .imagenesMass {
+      width: 400px;
+      height: 450px;
+      border-radius: 350px; }
+
+body main #chocolatesBanner {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr; }
+
+body main .chocolatesBanner {
+  max-width: 100%; }
+
+body main .chocolatesFlex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  text-align: center; }
+  body main .chocolatesFlex img {
+    width: 250px;
+    height: 250px;
+    margin: 25px;
+    border-radius: 10px; }
+
+body main .comentarios {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 1fr 1fr;
+  height: 300px;
+  border: 5px solid #607D8B;
+  border-radius: 60px;
+  margin: 50px;
+  padding: 10px;
+  align-items: center;
+  font-style: italic; }
+  body main .comentarios img {
+    width: 100%;
+    margin: 5px;
+    border-radius: 30px; }
+
+body main .banner {
+  height: 850px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../Img/Aceites/logo_laur.svg); }
+
+body main #colorBlanco {
+  color: #FFFFFF;
+  text-align: center; }
+
+body main #upper {
+  text-transform: uppercase; }
+
+body main .premios, body main .aceitesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center; }
+
+body main #imagenPremio {
+  height: 100%;
+  width: 100%; }
+
+body main .aceitesGrid {
+  background-color: #FFFFFF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 50px;
+  padding: 10px;
+  border: 10px solid #607D8B;
+  text-align: center; }
+  body main .aceitesGrid .fondosAceite {
+    border-radius: 50px; }
+
+@media only screen and (max-width: 768px) {
+  body main .premios, body main .aceitesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  body main .aceitesGrid {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    margin: 100px;
+    padding: 10px;
+    gap: 10px;
+    border: 5px solid #607D8B; } }
+
+@media only screen and (max-width: 600px) {
+  .aceitesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr; } }
+
+body main .error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px; }
+  body main .error img {
+    margin: 10px;
+    height: 500px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #000000;
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif; }
+  body header {
+    font-family: 'Patua One', cursive;
+    position: sticky;
+    top: 0;
+    background-color: #212529; }
+    body header a {
+      text-decoration: none; }
+  body footer .cajaFooter {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #455A64, #414141);
+    color: #FFFFFF; }
+    body footer .cajaFooter__div-desarrollador {
+      text-align: center;
+      font-style: italic;
+      color: #FF4081;
+      font-weight: 900; }
+    body footer .cajaFooter__div-centradoDeIconosFooter {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-content: center; }
+    body footer .cajaFooter__Img {
+      height: 55px;
+      width: 55px;
+      margin: 5px;
+      padding: 5px; }
+    body footer .cajaFooter__Img:hover {
+      transform: scale(1.3, 1.3); }
+  body p {
+    margin: 2px 5px 2px 5px;
+    padding: 10px; }
+  body tr, body td {
+    border: 2px solid; }
+  body th {
+    background-color: #E5EDE8;
+    color: #483D4B; }
+  body table {
+    margin: 30px; }
+  body h3 {
+    text-transform: capitalize;
+    color: #757575; }
+  body main .inicioTitulos__tituloH1-titulos, body main .cajaNosotros__tituloH2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #FF4081;
+    word-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px;
+    padding: 5px; }
+  body main .inicioTitulos__titulosMenores, body main .cajaInicioHistoria__titulo-titulosMenores, body main .cajaInicioHistoriaReverse__titulo-titulosMenores, body main .cajaNosotros__tituloH3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #757575;
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 5px;
+    margin: 30px;
+    padding: 5px; }
+    body main .inicioTitulos__titulosMenores-tituloOpacity, body main .h3Opacy {
+      animation-duration: 3s;
+      animation-name: recoridoTitulo;
+      animation-iteration-count: infinite; }
+
+@keyframes recoridoTitulo {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  75% {
+    opacity: 1; }
+  100% {
+    opacity: 1.5; } }
+  body main .division, body main .cajaInicioHistoria-division {
+    background: linear-gradient(to bottom, #FFFFFF, #c0c8cc); }
+  body main .divisionSecundaria, body main .cajaInicioHistoriaReverse-divisionSecundaria {
+    background: linear-gradient(to bottom, #c0c8cc, #FFFFFF); }
+  body main .cajaInicioHistoria {
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px; }
+    body main .cajaInicioHistoria__section-historiaTexto {
+      font-size: 20px;
+      font-family: 'Mate SC', serif;
+      word-spacing: 10px;
+      line-height: 35px;
+      margin-bottom: 40px;
+      text-align: center; }
+    body main .cajaInicioHistoria__Img-imagenesCar {
+      height: 250px;
+      width: 250px;
+      border: 5px solid #ffdde7;
+      border-radius: 350px;
+      margin: 5px; }
+    body main .cajaInicioHistoria__Img:hover {
+      transform: scale(1.01, 1.01); }
+  body main .cajaInicioHistoriaReverse {
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px; }
+    body main .cajaInicioHistoriaReverse__section-historiaTexto {
+      font-size: 20px;
+      font-family: 'Mate SC', serif;
+      word-spacing: 10px;
+      line-height: 35px;
+      margin-bottom: 40px;
+      text-align: center; }
+  body main .selector {
+    height: 25px; }
+  body main .centradoDeIconos, body main footer .cajaFooter__divImg-centradoDeIconos, body footer main .cajaFooter__divImg-centradoDeIconos, body main .cajaNosotros__iconos-centradoDeIconos {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+  body main .cajaNosotros {
+    margin: 150px 200px 50px 200px;
+    padding: 10px;
+    border: 10px solid #607D8B;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 6fr;
+    text-align: center; }
+    body main .cajaNosotros__cajaNosotrosVisionMision {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      text-align: start;
+      gap: 10px; }
+  body main .cajaEncontranos {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+    align-content: center; }
+    body main .cajaEncontranos #mapa {
+      align-self: center; }
+
+@media only screen and (max-width: 768px) {
+  body main {
+    /*mermeldas*/ }
+    body main .cajaInicioHistoria {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(2, 50%); }
+    body main .cajaInicioHistoriaReverse {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(2, 50%);
+      display: flex;
+      flex-direction: column-reverse; }
+    body main .cajaNosotros {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+      margin: 50px; }
+    body main .cajaEncontranos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      margin: 10px; }
+    body main footer .cajaFooter {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: 1fr;
+      gap: 10px; }
+      body main footer .cajaFooter .iconosRedes {
+        width: 45px;
+        height: 45px; }
+    body main .inicioMermeladasMultimedia {
+      margin: 0px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center; }
+    body main .mermeladasMultimedia {
+      margin: 0px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+      justify-items: center;
+      align-items: center; }
+    body main .descripcionMass {
+      display: flex;
+      flex-direction: column; }
+    body main .videosMass {
+      margin: 0px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 5px; }
+    body main .tipoDeMermeladas {
+      width: 100%;
+      margin: 10px 25px 10px 25px;
+      border: 5px solid #607D8B;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #FFFFFF; }
+    body main .botoneramermeladas {
+      margin: 10px; } }
+
+@media only screen and (max-width: 600px) {
+  .cajaInicioHistoria {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 50%); }
+  .cajaInicioHistoriaReverse {
+    display: flex;
+    flex-direction: column-reverse; }
+  .cajaNosotros {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1fr 6fr;
+    justify-items: center;
+    align-items: center;
+    margin: 10%; }
+    .cajaNosotros__cajaNosotrosVisionMision {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      text-align: justify;
+      gap: 10px; }
+  .cajaEncontranos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; }
+  .cajaFooter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 2fr; }
+    .cajaFooter__div-centradoDeIconosFooter {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+  /*contacto*/
+  .cajaContacto {
+    font-size: 15px;
+    margin: 10px 20px 20px 20px;
+    padding: 10px; }
+  /*mermeldas*/
+  .inicioMermeladasMultimedia {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center; }
+  .mermeladasMultimedia {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    justify-items: center;
+    align-items: center; }
+  .descripcionMass {
+    display: flex;
+    flex-direction: column; }
+  .videosMass {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px; }
+  .tipoDeMermeladas {
+    width: 100%;
+    margin: 10px 25px 10px 25px;
+    border: 5px solid #607D8B;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF; }
+  .imagenesMass {
+    width: 250px;
+    height: 300px;
+    border-radius: 350px; }
+  .botoneramermeladas {
+    margin: 10px; } }

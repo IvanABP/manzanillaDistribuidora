@@ -1,0 +1,93 @@
+body{
+    .division{
+        background: linear-gradient(to bottom, #FFFFFF,  #c0c8cc );
+    }
+    main{
+        .inicioMermeladasMultimedia{
+            display: grid;
+            grid-template-columns:1fr;
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+            margin:20px 100px 0px 100px ;
+
+            .mermeladasMultimedia{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                justify-items: center;
+                align-items: center;
+
+                .descripcionMass{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .botoneramermeladas{
+                        margin-left: 10px;
+                    }
+                
+                }
+            } 
+            .videosMass{
+                display: flex;
+                flex-direction: row;
+                justify-content:space-around;
+                margin: 40px;
+            }
+        }
+        .selector{
+            @extend .selector;
+        }
+        .titulos{
+            text-align:center;
+            font-weight: bold;
+            font-size: 35px;
+            color: #FF4081;
+            word-spacing: 5px;
+            font-family: 'Montserrat', sans-serif;
+            margin: 50px;
+            padding: 5px;
+        }
+        .titulosMenores{
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            color: #757575;
+            font-family: 'Montserrat', sans-serif;
+            word-spacing: 5px;
+            margin: 30px;
+            padding: 5px;
+        }
+        .muestraDeMermeladas{
+            margin-bottom: 40px;
+            display: flex;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-content: center;
+
+            .tipoDeMermeladas{
+                width: 45%;
+                margin: 10px 25px 10px 25px;
+                border: 5px solid #607D8B;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #FFFFFF;
+                
+                .imagenesMass{
+                    width: 400px;
+                    height: 450px;
+                    border-radius: 350px;
+                }
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+

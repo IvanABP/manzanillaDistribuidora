@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Patua+One&family=Vollkorn+SC:wght@600&display=swap" rel="stylesheet">
+    
+    <meta name="description"
+    content="Somos un pequeña empresa familiar dedicada al distribucion de productos seleccionados. Nuestro objetivo es promover un estilo de vida saludable, teniendo siempre en cuenta a los clientes, como a si lograr la amplia venta de los productos en los pequeños y grandes negocios.">
+ 
+    <meta name="keywords"
+    content="ChocolateColonial, chocolatecolonial, Distribuidora de Chocolate, Sin Tacc, Sin Azucar Agregado, Distribuidora De Chocolate, Aceite Laur Distribuidora, Productos Ornanico, Productos Naturales, MermeladasSaludables, Distribuidora Masseube, Mermelada Organica, Mermelada Natuaral">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Dist. Manzilla</title>
+</head>
+
+<body>
+    <body>
+        <header>
+            <!--Inicio de navbar de boost-->
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="Img/Logo/dManzilla_2.png" alt="LogoManzanilla" width="60" height="60" class="d-inline-block align-text-center">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="chocolate.html">Chocolates</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="mermeladas.html">Mermeladas</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="aceites.html">Aceites</a></li>
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                          </li>
+                      </li>                  
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+            <!--Fin de navbar-->
+        </header>
+    <hr> <!--DIVISION de header con texto de main-->
+
+    <main class="contacto contacto-division">
+        <h1 class="contacto__titulos contacto__titulos-titulo">Distribuidora Manzilla <br>Contactanos</h1>
+
+        <!--Inicio de Bienvenida-->
+        <div class="contacto__cajaContactoBienvenida contacto__cajaContactoBienvenida-bordes">
+          <p class="contato__p">Hola, espero que te encuentres bien.<br>No dudes en dejarnos tus dudas o consultas <br>y en la brevedad nos comunicaremos con usted. <br>Tambien podés contactarnos por las redes sociales <br> o mandarnos un mensaje a través del siguiente formulario de contacto.</p>
+
+          <p class="contato__p">Si te resulta mas facil, te dejamos nuestro e-mail de contacto: <a href="mailto:i-b@gmail.com">i-b@gmail.com</a></p>
+        </div>
+        <!--Fin de Bienvenida-->
+
+        <!--Formulario con boost Inicio-->
+        <div class="cajaContacto">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputN" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="inputN" placeholder="SuNombre">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputA" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputA" placeholder="SuApellido">
+                  </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="Mail@gmail.com">
+                </div>
+               
+                <div class="col-4">
+                  <label for="inputNumber" class="form-label">Telefono</label>
+                  <input type="number" class="form-control" id="inputNumber" placeholder="1122334455">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Como te gustaria que te contactemos:</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Formas de Contacto...</option>
+                    <option>Tel</option>
+                    <option>E-mail</option>
+                    <option>Ambas</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <label class="form-check-label" for="gridCheck">¿Desea recibir Newsletter?</label>
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                  </div>
+                </div>
+                <label for="validationTextarea" class="form-label">Consulta:</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required>¡Hola! quería hacer una consulta</textarea>
+                <div class="invalid-feedback">
+                Please enter a message in the textarea.
+                </div>
+                <div class="col-4">
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+                <div class="col-4">
+                    <button type="reset" class="btn btn-danger">Limpiar</button>
+                  </div>
+              </form>
+        </div> 
+        <!--Fin del Formulario-->         
+
+    </main><!--Fin del contenido del main--> 
+
+    <footer>
+      <section class="cajaFooter"><!--Bloque Inicio-->
+          <div class="cajaFooter__div cajaFooter__div-desarrollador">
+              <p class="cajaFooter__p">Desarrollado por Ivan Balestrieri-2021</p>
+
+              <div class="cajaFooter__divImg cajaFooter__divImg--centradoDeIconos">
+                  <img class="cajaFooter__Img" src="Img/Iconos/Linkedin.png" alt="logoLinkedin">
+                  <img class="cajaFooter__Img" src="Img/Iconos/github.png" alt="Github">
+              </div>
+          </div>
+
+          <div class="cajaFooter__div cajaFooter__div-centradoDeIconosFooter">
+              <p>Acercate a nuestros canales <br> de comunicacion y redes sociales</p>
+              <img class="cajaFooter__Img" src="Img/Iconos/facebook.png" alt="iconoFacebook">
+              <img class="cajaFooter__Img" src="Img/Iconos/instagram.png" alt="iconoInstragam">
+              <img class="cajaFooter__Img" src="Img/Iconos/gmail.png" alt="iconoGmail">
+              <img class="cajaFooter__Img" src="Img/Iconos/whatsapp.png" alt="iconoWashapp">
+          </div>
+      </section><!--Bloque Fin-->
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
