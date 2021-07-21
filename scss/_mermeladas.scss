@@ -85,7 +85,66 @@ body{
         
     }
 }
+@media only screen and ( max-width:600px){
+    body{
+        main{
+            .inicioMermeladasMultimedia{
+                margin: 0px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                justify-items: center;
+                align-items: center;
 
+                .mermeladasMultimedia{
+                    margin: 0px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 2fr;
+                    justify-items: center;
+                    align-items: center;
+
+                    .descripcionMass{
+                        display: flex;
+                        flex-direction: column;
+                
+                    }
+                    .botoneramermeladas{
+                        margin: 10px;
+                    }
+                }
+                .videosMass{
+                    margin: 0px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(2, 1fr);
+                    gap: 5px;
+                }
+        
+            }
+            .muestraDeMermeladas{
+                .tipoDeMermeladas{
+                    width: 100%;
+                    margin: 10px 25px 10px 25px;
+                    border: 5px solid $colorBordeCajas;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $colorBlanco;
+
+                    .imagenesMass{
+                        width: 250px;
+                        height: 300px;
+                        border-radius: 350px;
+                    }
+                }
+
+            }
+        }
+    }
+}
 
 
 

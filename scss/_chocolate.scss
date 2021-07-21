@@ -8,7 +8,7 @@ body{
             grid-template-rows: 1fr 1fr;
         }
         .chocolatesBanner{
-            max-width: 100%;
+            width: 100%;            
         }
         .chocolatesFlex{
             display: grid;
@@ -24,6 +24,29 @@ body{
                 border-radius: 10px;
             }
         }
+        .muestraDeChocolate{
+                display: grid;
+                grid-template-columns:repeat(3, 1fr);
+
+                .tipoDeChocolate{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+                    border: 5px solid $colorBordeCajas;
+                    border-radius: 5px;
+                    justify-items: center;
+                    align-items: center;
+                    background-color: $colorBlanco;
+                    margin: 10px 25px 10px 25px;
+                    align-content: center;
+                    justify-content: center;
+                    text-align:center;
+
+                    img{
+                        width: 250px;
+                        height: 300px;
+                    }
+                }
+            }
         .h3Opacy{
             @extend .inicioTitulos__titulosMenores-tituloOpacity;
         }
@@ -31,7 +54,6 @@ body{
             display: grid;
             grid-template-columns: 1fr 10fr;
             grid-template-rows: 1fr 1fr;
-            height: 300px;
             border: 5px solid #607D8B;
             border-radius: 60px;
             margin: 50px;
@@ -46,5 +68,60 @@ body{
             }
             
         }   
+    }
+}
+@media only screen and ( max-width:600px){
+    body{
+        main{
+            .chocolatesFlex{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);  
+            }
+            .muestraDeChocolate{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+
+                .tipoDeChocolate{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+                    border: 5px solid $colorBordeCajas;
+                    border-radius: 5px;
+                    justify-items: center;
+                    align-items: center;
+                    background-color: $colorBlanco;
+                    margin: 10px 25px 10px 25px;
+                    align-content: center;
+                    justify-content: center;
+                    text-align:center;
+
+                    img{
+                        width: 250px;
+                        height: 300px;
+                    }
+                }
+            }
+            .comentarios{
+                display: grid;
+                grid-template-columns: 1fr 10fr;
+                grid-template-rows: 1fr 1fr;
+                border: 5px solid #607D8B;
+                border-radius: 60px;
+                margin: 50px;
+                padding: 10px;
+                align-items: center;
+                font-style: italic;
+    
+                img{
+                    width: 100%;
+                    margin: 5px;
+                    border-radius: 30px;
+                }
+                
+            }   
+
+            
+        }
     }
 }

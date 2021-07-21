@@ -41,6 +41,12 @@ body main {
       width: 50%;
       font-size: 20px; }
 
+@media only screen and (max-width: 600px) {
+  body main .cajaContacto {
+    font-size: 15px;
+    margin: 20px;
+    padding: 10px; } }
+
 body .division, body main .cajaInicioHistoria-division {
   background: linear-gradient(to bottom, #FFFFFF, #c0c8cc); }
 
@@ -108,13 +114,54 @@ body main .muestraDeMermeladas {
       height: 450px;
       border-radius: 350px; }
 
+@media only screen and (max-width: 600px) {
+  body main .inicioMermeladasMultimedia {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center; }
+    body main .inicioMermeladasMultimedia .mermeladasMultimedia {
+      margin: 0px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 2fr;
+      justify-items: center;
+      align-items: center; }
+      body main .inicioMermeladasMultimedia .mermeladasMultimedia .descripcionMass {
+        display: flex;
+        flex-direction: column; }
+      body main .inicioMermeladasMultimedia .mermeladasMultimedia .botoneramermeladas {
+        margin: 10px; }
+    body main .inicioMermeladasMultimedia .videosMass {
+      margin: 0px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 5px; }
+  body main .muestraDeMermeladas .tipoDeMermeladas {
+    width: 100%;
+    margin: 10px 25px 10px 25px;
+    border: 5px solid #607D8B;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF; }
+    body main .muestraDeMermeladas .tipoDeMermeladas .imagenesMass {
+      width: 250px;
+      height: 300px;
+      border-radius: 350px; } }
+
 body main #chocolatesBanner {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr; }
 
 body main .chocolatesBanner {
-  max-width: 100%; }
+  width: 100%; }
 
 body main .chocolatesFlex {
   display: grid;
@@ -128,11 +175,29 @@ body main .chocolatesFlex {
     margin: 25px;
     border-radius: 10px; }
 
+body main .muestraDeChocolate {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  body main .muestraDeChocolate .tipoDeChocolate {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    border: 5px solid #607D8B;
+    border-radius: 5px;
+    justify-items: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    margin: 10px 25px 10px 25px;
+    align-content: center;
+    justify-content: center;
+    text-align: center; }
+    body main .muestraDeChocolate .tipoDeChocolate img {
+      width: 250px;
+      height: 300px; }
+
 body main .comentarios {
   display: grid;
   grid-template-columns: 1fr 10fr;
   grid-template-rows: 1fr 1fr;
-  height: 300px;
   border: 5px solid #607D8B;
   border-radius: 60px;
   margin: 50px;
@@ -143,6 +208,45 @@ body main .comentarios {
     width: 100%;
     margin: 5px;
     border-radius: 30px; }
+
+@media only screen and (max-width: 600px) {
+  body main .chocolatesFlex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); }
+  body main .muestraDeChocolate {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr); }
+    body main .muestraDeChocolate .tipoDeChocolate {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      border: 5px solid #607D8B;
+      border-radius: 5px;
+      justify-items: center;
+      align-items: center;
+      background-color: #FFFFFF;
+      margin: 10px 25px 10px 25px;
+      align-content: center;
+      justify-content: center;
+      text-align: center; }
+      body main .muestraDeChocolate .tipoDeChocolate img {
+        width: 250px;
+        height: 300px; }
+  body main .comentarios {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 1fr;
+    border: 5px solid #607D8B;
+    border-radius: 60px;
+    margin: 50px;
+    padding: 10px;
+    align-items: center;
+    font-style: italic; }
+    body main .comentarios img {
+      width: 100%;
+      margin: 5px;
+      border-radius: 30px; } }
 
 body main .banner {
   height: 850px;
@@ -508,102 +612,4 @@ body {
       justify-items: center;
       align-items: center; }
     body footer .cajaFooter__Img:hover {
-      transform: scale(1.3, 1.3); }
-  /*
-    .cajaInicioHistoria{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows:repeat(2, 50%);
-    }
-    .cajaInicioHistoriaReverse{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .cajaNosotros{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column: 1fr 6fr;
-        justify-items: center;
-        align-items: center;
-        margin:10%;
-        &__cajaNosotrosVisionMision{
-            display: grid;
-            grid-template-columns:  1fr;
-            grid-template-rows: 1fr;
-            text-align: justify;
-            gap: 10px;
-            
-        }
-    }
-    .cajaEncontranos{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .cajaFooter{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 2fr;
-        &__div{
-            &-centradoDeIconosFooter{
-                display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            }
-        }
-    }
-    /*contacto
-    .cajaContacto{
-        font-size: 15px;
-        margin: 10px 20px 20px 20px;
-        padding: 10px;
-    }
-    /*mermeldas
-    .inicioMermeladasMultimedia{
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        justify-items: center;
-        align-items: center;
-
-    }
-    .mermeladasMultimedia{
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr;
-        justify-items: center;
-        align-items: center;
-    }
-    .descripcionMass{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .videosMass{
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        gap: 5px;
-    }
-    .tipoDeMermeladas{
-        width: 100%;
-        margin: 10px 25px 10px 25px;
-        border: 5px solid $colorBordeCajas;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $colorBlanco;
-    }
-    .imagenesMass{
-        width: 250px;
-        height: 300px;
-        border-radius: 350px;
-    }
-    .botoneramermeladas{
-        margin: 10px;
-    }*/ }
+      transform: scale(1.3, 1.3); } }
