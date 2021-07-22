@@ -15,7 +15,8 @@ body{
             grid-template-columns: repeat(3, 1fr);
             justify-items: center;
             align-items: center;
-            text-align: center;
+            justify-content: center;
+            align-content: center;
 
             img{
                 width: 250px;
@@ -27,19 +28,24 @@ body{
         .muestraDeChocolate{
                 display: grid;
                 grid-template-columns:repeat(3, 1fr);
+                justify-items: center;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
 
                 .tipoDeChocolate{
                     grid-template-columns: 1fr;
                     grid-template-rows: repeat(3, 1fr);
                     border: 5px solid $colorBordeCajas;
                     border-radius: 5px;
-                    justify-items: center;
-                    align-items: center;
                     background-color: $colorBlanco;
                     margin: 10px 25px 10px 25px;
-                    align-content: center;
+                    justify-items: center;
+                    align-items: center;
                     justify-content: center;
-                    text-align:center;
+                    align-content: center;
+    
+                    
 
                     img{
                         width: 250px;
@@ -77,10 +83,10 @@ body{
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: repeat(3, 1fr);
-                align-content: center;
+                justify-items: center;
                 align-items: center;
                 justify-content: center;
-        
+                align-content: center;
                 .tipoDeChocolate{
                     grid-template-columns: 1fr;
                     grid-template-rows: repeat(3, 1fr);
@@ -89,9 +95,11 @@ body{
                     background-color: $colorBlanco;
                     margin: 10px 25px 10px 25px;
                     text-align:center;
-                    align-content: center;
+                    justify-items: center;
                     align-items: center;
-                    justify-content: center;   
+                    justify-content: center;
+                    align-content: center;
+      
                 }
             }
         }
@@ -116,13 +124,13 @@ body{
                     grid-template-rows: repeat(3, 1fr);
                     border: 5px solid $colorBordeCajas;
                     border-radius: 5px;
-                    justify-items: center;
-                    align-items: center;
                     background-color: $colorBlanco;
                     margin: 10px 25px 10px 25px;
-                    align-content: center;
+                    justify-items: center;
+                    align-items: center;
                     justify-content: center;
-                    text-align:center;
+                    align-content: center;
+    
 
                     img{
                         width: 250px;
@@ -147,9 +155,7 @@ body{
                     border-radius: 30px;
                 }
                 
-            }   
-
-            
+            }      
         }
     }
 }

@@ -217,7 +217,8 @@ body main .chocolatesFlex {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: center;
-  text-align: center; }
+  justify-content: center;
+  align-content: center; }
   body main .chocolatesFlex img {
     width: 250px;
     height: 250px;
@@ -226,19 +227,22 @@ body main .chocolatesFlex {
 
 body main .muestraDeChocolate {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center; }
   body main .muestraDeChocolate .tipoDeChocolate {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     border: 5px solid #607D8B;
     border-radius: 5px;
-    justify-items: center;
-    align-items: center;
     background-color: #FFFFFF;
     margin: 10px 25px 10px 25px;
-    align-content: center;
+    justify-items: center;
+    align-items: center;
     justify-content: center;
-    text-align: center; }
+    align-content: center; }
     body main .muestraDeChocolate .tipoDeChocolate img {
       width: 250px;
       height: 300px; }
@@ -263,9 +267,10 @@ body main .comentarios {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    align-content: center;
+    justify-items: center;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    align-content: center; }
     body main .muestraDeChocolate .tipoDeChocolate {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(3, 1fr);
@@ -274,9 +279,10 @@ body main .comentarios {
       background-color: #FFFFFF;
       margin: 10px 25px 10px 25px;
       text-align: center;
-      align-content: center;
+      justify-items: center;
       align-items: center;
-      justify-content: center; } }
+      justify-content: center;
+      align-content: center; } }
 
 @media only screen and (max-width: 600px) {
   body main .chocolatesFlex {
@@ -292,13 +298,12 @@ body main .comentarios {
       grid-template-rows: repeat(3, 1fr);
       border: 5px solid #607D8B;
       border-radius: 5px;
-      justify-items: center;
-      align-items: center;
       background-color: #FFFFFF;
       margin: 10px 25px 10px 25px;
-      align-content: center;
+      justify-items: center;
+      align-items: center;
       justify-content: center;
-      text-align: center; }
+      align-content: center; }
       body main .muestraDeChocolate .tipoDeChocolate img {
         width: 250px;
         height: 300px; }
@@ -317,68 +322,129 @@ body main .comentarios {
       margin: 5px;
       border-radius: 30px; } }
 
-body main .banner {
-  height: 850px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(../Img/Aceites/logo_laur.svg); }
-
-body main #colorBlanco {
-  color: #FFFFFF;
-  text-align: center; }
-
-body main #upper {
-  text-transform: uppercase; }
-
-body main .premios, body main .aceitesGrid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center; }
-
-body main #imagenPremio {
-  height: 100%;
-  width: 100%; }
-
-body main .aceitesGrid {
-  background-color: #FFFFFF;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  margin: 50px;
-  padding: 10px;
-  border: 10px solid #607D8B;
-  text-align: center; }
-  body main .aceitesGrid .fondosAceite {
-    border-radius: 50px; }
-
-@media only screen and (max-width: 768px) {
-  body main .premios, body main .aceitesGrid {
+body {
+  /*
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            @extend .premios;*/ }
+  body main .banner {
+    display: grid;
+    grid-template-columns: 1fr; }
+    body main .banner img {
+      width: 100%;
+      height: 100%; }
+  body main #colorBlanco {
+    color: #FFFFFF;
+    text-align: center; }
+  body main #upper {
+    text-transform: uppercase; }
+  body main .premios {
+    margin: 50px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     align-content: center;
     align-items: center;
     justify-content: center;
     text-align: center; }
+    body main .premios #imagenPremio {
+      height: 100%;
+      width: 100%; }
+    body main .premios .medallasDescripcion {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-content: center;
+      align-items: center;
+      justify-content: center; }
   body main .aceitesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px;
+    padding: 10px;
+    border: 10px solid #607D8B;
     background-color: #FFFFFF;
+    text-align: center;
+    align-content: center;
+    align-items: center; }
+    body main .aceitesGrid .fondosAceite {
+      border-radius: 50px; }
+
+@media only screen and (max-width: 768px) {
+  body main .premios {
+    margin: 50px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
-    margin: 100px;
-    padding: 10px;
-    gap: 10px;
-    border: 5px solid #607D8B; } }
-
-@media only screen and (max-width: 600px) {
-  .aceitesGrid {
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    body main .premios .medallasDescripcion {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr;
+      align-content: center;
+      align-items: center;
+      justify-content: center; }
+      body main .premios .medallasDescripcion #imagenPremio {
+        height: 100%;
+        width: 100%; }
+  body main .aceitesGrid {
+    margin: 50px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3fr 1fr; } }
+    grid-template-rows: 2fr 1fr;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    body main .aceitesGrid img {
+      width: 100%;
+      height: 100%; }
+    body main .aceitesGrid .fondosAceite {
+      border-radius: 50px;
+      width: 100%;
+      height: 400px; } }
+
+@media only screen and (max-width: 600px) {
+  body main .premios {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    body main .premios .medallasDescripcion {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 2fr 1fr;
+      align-content: center;
+      align-items: center;
+      justify-content: center; }
+      body main .premios .medallasDescripcion #imagenPremio {
+        height: 50%;
+        width: 100%; }
+  body main .aceitesGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    margin: 20px;
+    padding: 10px;
+    border: 10px solid #607D8B;
+    background-color: #FFFFFF;
+    text-align: center;
+    align-content: center;
+    align-items: center; }
+    body main .aceitesGrid img {
+      width: 100%;
+      height: 100%; }
+    body main .aceitesGrid .fondosAceite {
+      border-radius: 50px;
+      width: 100%;
+      height: 400px; } }
 
 body main .error {
   display: flex;
@@ -448,6 +514,10 @@ body {
   body h3 {
     text-transform: capitalize;
     color: #757575; }
+  body main .inicioTitulos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr); }
   body main .inicioTitulos__tituloH1-titulos, body main .cajaNosotros__tituloH2 {
     text-align: center;
     font-weight: bold;
