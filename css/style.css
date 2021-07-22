@@ -160,19 +160,8 @@ body main .muestraDeMermeladas {
       grid-template-rows: 1fr 2fr;
       justify-items: center;
       align-items: center; }
-      body main .inicioMermeladasMultimedia .mermeladasMultimedia .descripcionMass {
-        display: flex;
-        flex-direction: column; }
-      body main .inicioMermeladasMultimedia .mermeladasMultimedia .botoneramermeladas {
-        margin: 10px; }
-    body main .inicioMermeladasMultimedia .videosMass {
-      margin: 0px;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(2, 1fr);
-      gap: 10px; }
-  body main .muestraDeMermeladas .tipoDeMermeladas {
-    width: 80%; } }
+    body main .inicioMermeladasMultimedia .muestraDeMermeladas .tipoDeMermeladas {
+      width: 80%; } }
 
 @media only screen and (max-width: 600px) {
   body main .inicioMermeladasMultimedia {
