@@ -85,6 +85,36 @@ body{
         
     }
 }
+@media only screen and (max-width:768px){
+    body{
+        main{
+            .inicioMermeladasMultimedia{
+                margin: 0px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                justify-items: center;
+                align-items: center;
+
+                .mermeladasMultimedia{
+                    margin: 0px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr 2fr;
+                    justify-items: center;
+                    align-items: center;
+                }
+            .muestraDeMermeladas{
+
+                .tipoDeMermeladas{
+                    width: 80%;
+                }
+            }
+        }
+    }
+    
+
+}
 @media only screen and ( max-width:600px){
     body{
         main{
@@ -118,7 +148,7 @@ body{
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-template-rows: repeat(2, 1fr);
-                    gap: 5px;
+                    gap: 10px;
                 }
         
             }

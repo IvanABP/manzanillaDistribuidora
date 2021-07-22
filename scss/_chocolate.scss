@@ -70,6 +70,34 @@ body{
         }   
     }
 }
+@media only screen and (max-width:768px){
+    body{
+        main{
+            .muestraDeChocolate{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(3, 1fr);
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+        
+                .tipoDeChocolate{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+                    border: 5px solid $colorBordeCajas;
+                    border-radius: 5px;
+                    background-color: $colorBlanco;
+                    margin: 10px 25px 10px 25px;
+                    text-align:center;
+                    align-content: center;
+                    align-items: center;
+                    justify-content: center;   
+                }
+            }
+        }
+    }
+    
+}
 @media only screen and ( max-width:600px){
     body{
         main{

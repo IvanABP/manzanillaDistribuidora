@@ -5,12 +5,6 @@
 }
 body{
     main{
-        /*
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        align-content: center;*/
 
         .contacto{
             &__titulos{
@@ -28,7 +22,7 @@ body{
             &__cajaContactoBienvenida{
                 display: flex;
                 flex-direction: column;
-                margin: 30px;
+                margin: 30px 300px;
                 padding: 20px;
                 text-align: center;
                 &-bordes{
@@ -60,16 +54,71 @@ body{
              }
              
         }
+        .imagenContact{
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-items: center;
+            align-items: center;
+            margin: 5px;
+
+            img{
+                width: 50%;
+                height: 50%;
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    body{
+        main{
+            .contacto{
+                &__cajaContactoBienvenida{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 30px 150px;
+                    padding: 20px;
+                    text-align: center;
+                    
+        
+                }
+            }
+        }
     }
 }
 @media only screen and ( max-width:600px){
     
     body{
         main{
+            .contacto{
+                &__cajaContactoBienvenida{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 30px 40px;
+                    padding: 20px;
+                    text-align: center;  
+                }
+            }
             .cajaContacto{
                 font-size: 15px;
                 margin: 20px;
                 padding: 10px;
+
+                input:focus {
+                    width: 90%;
+                    font-size: 15px;
+                }
+            }
+            .imagenContact{
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                align-items: center;
+                margin: 5px;
+
+                img{
+                    width:80%;
+                    height:80%;
+                }
             }
         }
     }

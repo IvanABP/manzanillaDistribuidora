@@ -278,7 +278,7 @@ body{
         
     }
 }
-/*
+
 @media only screen and (max-width:768px){
     body{
         main{
@@ -308,76 +308,30 @@ body{
                 grid-template-rows: 1fr;
                 margin: 10px;
             }
-            
-        
-            footer{
-                .cajaFooter{
-                    display: grid;
-                    grid-template-columns: 1fr 4fr;
-                    grid-template-rows: 1fr;
-                    gap: 10px;
+        }
+        footer{
+            .cajaFooter{
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                grid-template-rows: 1fr;
+                gap: 10px;
 
-                    .iconosRedes{
-                        width: 45px;
-                        height: 45px;
-                    }
+                .iconosRedes{
+                    width: 45px;
+                    height: 45px;
                 }
             }
-            /*mermeldas
-            .inicioMermeladasMultimedia{
-                margin: 0px;
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, 1fr);
-                justify-items: center;
-                align-items: center;
-
-            }
-            .mermeladasMultimedia{
-                margin: 0px;
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 2fr;
-                justify-items: center;
-                align-items: center;
-            }
-            .descripcionMass{
-                display: flex;
-                flex-direction: column;
-
-            }
-            .videosMass{
-                margin: 0px;
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: repeat(2, 1fr);
-                gap: 5px;
-            }
-            .tipoDeMermeladas{
-                width: 100%;
-                margin: 10px 25px 10px 25px;
-                border: 5px solid $colorBordeCajas;
-                border-radius: 5px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: $colorBlanco;
-            }
-            .botoneramermeladas{
-                margin: 10px;
-            }
-            
         }
     }
-}*/
+}
 @media only screen and ( max-width:600px){
     body{
         main{
             .cajaInicioHistoria{
                 display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows:repeat(2, 50%);
+                grid-template-columns: 1fr;
+                justify-items: center;
+                align-items: center;
             }
             .cajaInicioHistoriaReverse{
                 display: flex;
